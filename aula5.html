@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <form id ="form-contato">
+      <input type="checkbox" name="aceite" value="sim" /> Aceito os termos
+      <br>
+      <input type="radio" name="genero" value="f" /> Feminino
+      <br>
+      <input type="radio" name="genero" value="m" /> Masculino
+      <br>
+      <input type="radio" name="genero" value="outro" /> Outro
+      <br>
+      <input type="number" name="numero"/> Número para contato
+      <br>
+
+
+      <input type="file"
+      name="foto_perfil">
+      <br>
+      <br>
+      <br>
+      <select name="assunto">
+        <option value="duvidas">Duvida</option>
+        <option value="elogio">Elogio</option>
+        <option value="reclamacao">Reclamaçao</option>
+
+
+     </select>
+    <br>
+
+    <textarea name="mensagem" rows="5"
+    placeholder="escreva sua mensagem"></textarea>
+    
+    <br>
+
+    <br>
+    <br>
+    
+    <label for='campo-nome'>Nome completo</label>
+    <input type='text' id='campo-nome' name='nome'>
+    
+    <label for='campo-nome'>Aceito os termos de uso</label>
+     <br>
+    <button type="submit">Enviar</button>
+    
+    </form>
+    <script>
+        const formulario = document.querySelector(
+        "#form-contato");
+
+         formulario.addEventListener("submit", function(event){
+            event.preventDefault()
+            alert("mensagem enviada com sucesso!")
+         });
+    </script>
+</body>
+</html>
