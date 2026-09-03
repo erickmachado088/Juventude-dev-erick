@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme yugioh</title>
 </head>
 <body>
-    <button id="Meme">clique aqui (0/3)</button>
+    <button id="Meme">Clique aqui (0/3)</button>
     <div id="container-imagem" style="display: none;">
-    <img src:"https://th.bing.com/th/id/OIP.0UQkuorlyMV3CSu6HQj2RAHaIr?w=132&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-        alt="Um meme do anime japones yugioh"
-        width="200" 
-        height="200"
-    >
+        <img src="https://th.bing.com/th/id/OIP.0UQkuorlyMV3CSu6HQj2RAHaIr?w=132&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             alt="Um meme do anime japones yugioh"
+             width="800" 
+             height="400">
+
     </div>
 
     <script>
-        const button = document.querySelector("#Meme")
-        const conteinerimagem = document.querySelector("#container-imagem")
+        const botao = document.querySelector("#Meme");
+        const containerImagem = document.querySelector("#container-imagem");
 
         let cliques = 0;
 
-        // 3. Listener para escutar os cliques no botão
         botao.addEventListener("click", function() {
-            cliques++; // Soma +1 ao contador
+            cliques++;
 
-            // Atualiza o texto do botão para mostrar a contagem atual
             botao.textContent = `Clique aqui (${cliques}/3)`;
 
-            // 4. Verificação matemática: se atingiu 3 cliques
             if (cliques === 3) {
-                containerImagem.style.display = "block"; // Mostra a imagem
-                botao.disabled = true; // Desativa o botão para não continuar somando
+                containerImagem.style.display = "block";
+                botao.disabled = true;
                 botao.textContent = "Imagem liberada!";
             }
         });
-
     </script>
-
-
 </body>
 </html>
