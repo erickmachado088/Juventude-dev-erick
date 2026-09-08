@@ -1,0 +1,30 @@
+body {
+    background: #ffffffe4;
+    font-family: Arial, sans-serif;
+}
+
+.cartao{background: rgb(115, 100, 114);}
+#titulo{color: #2563eb;}
+
+#apresentacao{
+    color:#1e293b;
+    background: #dbeafe;
+    font-family: Arial, sans-serif;
+    font-size: 65px;
+    text-align: center;
+}
+
+
+body{color: #345533;}
+.destaque{background: #fef08a;}
+#titulo {font-size: 32px;}
+.cartao p {color: #e40c7f;}
+.interesses > li {color: #7c3aed}
+a[href="#"] {color:#2563eb}
+
+p {color:blue;}
+.aviso {color: orange;}
+#erro {color: red;}
+
+
+
