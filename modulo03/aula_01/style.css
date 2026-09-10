@@ -1,16 +1,28 @@
 body {
-    background: #ffffffe4;
+    background: #d17575e4;
     font-family: Arial, sans-serif;
 }
 
-.cartao{background: rgb(115, 100, 114);}
+.cartao{background: rgb(169, 5, 158);
+    width: 280px;
+    padding: 5px;
+    border: 20px solid #074e9f ;
+    margin: 16px;
+    box-sizing:border-box;}
+
+.bio{margin-bottom:20px;}
+.intereses{
+    padding-left: 24px;
+    text-align: left;
+}
+
 #titulo{color: #2563eb;}
 
 #apresentacao{
     color:#1e293b;
-    background: #dbeafe;
+    background: #d15203;
     font-family: Arial, sans-serif;
-    font-size: 65px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -28,3 +40,8 @@ p {color:blue;}
 
 
 
+html {font-size: 16px;}
+#titulo { font-size: 2rem;}
+.cartao {width: 80%;}
+body {min-height: 100vh}
+.cartao{border-width: 1px;}
