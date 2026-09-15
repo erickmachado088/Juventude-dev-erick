@@ -1,0 +1,47 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #c99fa7; 
+    font-family: 'Georgia', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.cartao {
+    background-color: #fce7f3 ;
+    width: 350px;
+    height: 80vh;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);/*Sombreamento da caixa*/
+    
+    background-image: url('css/fundo-transparente.png');/**/
+    background-size: cover;/*cobre o fundo*/
+    background-position: center;/*centraliza a imagen*/
+    background-repeat: no-repeat;
+    
+    display: flex; /*Alinha os elementos de cartao*/
+    flex-direction: column;/*organiza os elementos em coluna*/
+    justify-content: center;/*centraliza no eixo vertical*/
+    align-items: center;/*centraliza no eixo horizontal*/
+}
+
+#butao{
+    background-color: #b49cdc;
+    color: #1f1f1f;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    border-radius: 20px;
+    text-decoration: none
+}
+
+
+
+
+
+
+
+
+
