@@ -1,0 +1,29 @@
+body {
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+html{
+  font-size: 16px;
+}
+
+.cartao {
+  background: white;
+}
+
+#titulo {
+  font-size: 2rem;
+}
+
+.bio {
+  color: #ed3a3a;
+  font-size: 1rem;
+}
+
+.cartao{
+  width: 90%;
+  max-width: 420px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}

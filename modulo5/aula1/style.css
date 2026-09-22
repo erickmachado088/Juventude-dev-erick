@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Segoe UI', Arial, sans-serif;
+background: #4b87e1;
+color: #1e293b;
+line-height: 1.6;
+padding-top: 30px;
+}
+
+code {
+background: #2a538a;
+color: #0f172a;
+padding: 2px 6px;
+border-radius: 4px;
+font-family: 'Courier New', monospace;
+font-size: 0.9em;
+}
+
+/* ===========================
+   PALCO (área de demonstração)
+   =========================== */
+.palco {
+  position: relative;   /* ⬅️ referência pros filhos absolute */
+  background: #0de23b;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 800px;
+  min-height: 120px;
+  border: 2px dashed #c73e23;
+}
+
+/* Variação pra mostrar o absolute em ação */
+.palco-absolute {
+  min-height: 160px;
+  padding: 1.5rem;
+}
+
+/* ===========================
+   CAIXAS GENÉRICAS
+   =========================== */
+.caixa {
+  padding: 1.5rem 1rem;
+  border-radius: 4px;
+  color: #0a0a0a;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.caixa small {
+  font-weight: normal;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+
+/* ===========================
+   1. STATIC
+   =========================== */
+.caixa.static {
+  background: #64748b;
+  /* ⚠️ top/left são IGNORADOS aqui, mesmo se você tentar */
+  top: 50px;    /* não faz nada */
+  left: 50px;   /* não faz nada */
+}
+
+.caixa.static .obs {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: normal;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* Variação pra mostrar o absolute em ação */
+.palco-absolute {
+  min-height: 160px;
+  padding: 1.5rem;
+}
+
+.voltar-topo {
+position: fixed;
+bottom: 24px;
+right: 24px;
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #3b82f6;
+color: #fff;
+text-decoration: none;
+font-size: 1.4rem;
+font-weight: bold;
+border-radius: 50%;
+box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+transition: transform 0.2s ease, background 0.3s ease;
+z-index: 100;
+}
+
+.voltar-topo:hover {
+background: #2563eb;
+transform: scale(1.1);
+}
+
+
+.palco {
+width: 500px;
+min-height: 300px;
+top: 10px;
+right: 10px;
+
+background: #0de23b;
+padding: 1rem;
+border-radius: 5px;
+border: 2px dashed #c73e23;
+
+}
+
+.palco-fixed {
+position: fixed;
+
+top: 10px;
+right: 10px;
+
+width: 250px;
+min-height: 150px;
+
+background: #3498db;
+padding: 1rem;
+border-radius: 5px;
+border: 2px dashed #1d5f91;
+
+}
+
+.caixa {
+padding: 1rem;
+border-radius: 8px;
+color: #fff;
+font-weight: 600;}
