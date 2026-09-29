@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu portfólio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <main class="container py-4">
+    <!-- Cabeçalho / Título principal -->
+    <a href="#" class="btn btn-primary mb-4">
+      <h1>Erick Nogueira Machado</h1>
+    </a>
+
+    <!-- Alertas informativos -->
+    <div class="alert alert-info">
+      <strong>Projetos de estudo:</strong> os dados deste portfólio são fictícios.
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show">
+      Revise os links antes de compartilhar o portfólio.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar aviso"></button>
+    </div>
+
+    <!-- 1. Dropdown posicionado após os avisos -->
+    <div class="dropdown my-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Explorar portfólio
+      </button>
+      <ul class="dropdown-menu">
+        <!-- 3. Links apontando para #conecta e #faq -->
+        <li><a class="dropdown-item" href="#conecta">Projetos</a></li>
+        <li><a class="dropdown-item" href="#faq">Perguntas frequentes</a></li>
+      </ul>
+    </div>
+
+    <!-- Grid de cards de projetos -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Conecta Recôncavo</h2>
+            <p class="card-text">Oportunidades para jovens da região.</p>
+            <a href="#conecta" class="btn btn-primary">Conhecer o Conecta</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Conecta Recôncavo</h2>
+            <p class="card-text">Oportunidades para jovens da região.</p>
+            <a href="#conecta" class="btn btn-primary">Conhecer o Conecta</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Conecta Recôncavo</h2>
+            <p class="card-text">Oportunidades para jovens da região.</p>
+            <a href="#conecta" class="btn btn-primary">Conhecer o Conecta</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Seção de detalhes do projeto -->
+    <section id="conecta" class="mt-4">
+      <h2>Sobre o Conecta</h2>
+      <p>Um projeto de estudo com vagas e cursos.</p>
+    </section>
+
+    <!-- 2. Seção id="faq" criada após os cards e o #conecta -->
+    <section id="faq" class="mt-4">
+      <h2>Perguntas frequentes</h2>
+      <p>Tire suas dúvidas sobre os projetos e a atuação profissional.</p>
+    </section>
+  </main>
+
+  <!-- Scripts do Bootstrap e script customizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
